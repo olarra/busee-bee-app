@@ -12,7 +12,7 @@
     "baseUrl": "src",
     "paths": {
       "@pages/*": ["pages/*"],
-      "@models/*": ["models/*"],
+      "@config/*": ["config/*"],
       "@redux/*": ["redux/*"],
       "@services/*": ["services/*"],
       "@api": ["api/index"]
