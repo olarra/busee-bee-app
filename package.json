@@ -21,7 +21,8 @@
     "eject": "react-native-scripts-ts eject",
     "android": "react-native-scripts-ts android",
     "ios": "react-native-scripts-ts ios",
-    "test": "jest"
+    "test": "jest",
+    "lint": "tslint-config-prettier-check ./tslint.json"
   },
   "jest": {
     "globals": {
@@ -49,6 +50,9 @@
   "dependencies": {
     "expo": "^27.0.1",
     "react": "16.3.1",
-    "react-native": "~0.55.2"
+    "react-native": "~0.55.2",
+    "tslint": "^5.15.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.0.0"
   }
 }
