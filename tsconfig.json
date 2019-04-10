@@ -19,7 +19,7 @@
     "paths": {
       "@pages/*": ["pages/*"],
       "@config/*": ["config/*"],
-      "@redux/*": ["redux/*"],
+      "@shared/*": ["shared/*"],
       "@services/*": ["services/*"],
       "@api": ["api/index"]
     },
