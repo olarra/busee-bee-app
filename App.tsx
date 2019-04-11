@@ -1,3 +1,3 @@
-import LoginScreen from './src/pages/login/LoginScreen';
+import { MainScreen } from './src/app/MainScreen';
 
-export default LoginScreen;
+export default MainScreen;

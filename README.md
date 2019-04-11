@@ -1,4 +1,4 @@
-# Apollo React Native Hello World app
+# React Native - Busee Bee App
 
 This is the simple example React Native/Apollo app that lives at dev.apollodata.com.
 
@@ -7,16 +7,14 @@ This is the simple example React Native/Apollo app that lives at dev.apollodata.
 Clone the repository and run `npm install`:
 
 ```
-git clone https://github.com/apollostack/frontpage-react-native-app
-cd frontpage-react-native-app
+git clone https://github.com/olarra/busee-bee-app
+cd busee-bee-app
 npm install
 ```
 
 ## Starting the app
 
 Make sure you have [React Native installed](https://facebook.github.io/react-native/docs/getting-started.html).
-
-This app talks to the hello world server, available here: https://github.com/apollostack/frontpage-server
 
 Once you've installed and started that server, start this app with:
 

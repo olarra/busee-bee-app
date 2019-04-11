@@ -11,7 +11,8 @@
             "extensions": [".tsx", ".ts", ".js", ".ios.js", ".android.js"],
             "alias": {
               "@config": "./src/config",
-              "@shared": "./src/shared"
+              "@screens": "./src/app/screens",
+              "@shared": "./src/app/shared"
             }
           }
         ]

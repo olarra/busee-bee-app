@@ -1,5 +1,5 @@
 {
-  "name": "the-starter-app",
+  "name": "busee-bee-app",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -60,6 +60,7 @@
     "expo": "^27.0.1",
     "react": "16.3.1",
     "react-native": "~0.55.2",
+    "react-native-easy-grid": "^0.2.1",
     "tslint": "^5.15.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-react": "^4.0.0"

@@ -17,9 +17,9 @@
     "moduleResolution": "node",
     "baseUrl": "src",
     "paths": {
-      "@pages/*": ["pages/*"],
+      "@screens/*": ["app/screens/*"],
       "@config/*": ["config/*"],
-      "@shared/*": ["shared/*"],
+      "@shared/*": ["app/shared/*"],
       "@services/*": ["services/*"],
       "@api": ["api/index"]
     },
