@@ -4,11 +4,11 @@
     "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./src/assets/images/icon.png",
+    "icon": "./src/assets/images/busBee.png",
     "splash": {
-      "image": "./src/assets/images/splash.png",
+      "image": "./src/assets/images/splash-bee.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#D5D3D6"
     },
     "packagerOpts": {
       "sourceExts": ["ts", "tsx"],

@@ -1,8 +1,8 @@
 import colors from '@config/colors';
+import strings from '@config/strings';
 import { Button } from '@shared/components/Button';
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import strings from '@config/strings';
 
 class LoginScreen extends React.Component<{}> {
   public render() {
