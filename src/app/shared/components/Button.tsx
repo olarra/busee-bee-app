@@ -1,14 +1,20 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
-export const Button = (props: any) => (
+interface Props {
+  btnStyles?: object;
+  textStyles?: object;
+  textButton: string;
+  onPress: any;
+  disabled?: boolean;
+}
+
+export const Button = (props: Props) => (
   <TouchableOpacity
-    style={[styles.container, props.styles]}
+    style={[styles.container, props.btnStyles]}
     onPress={props.onPress}
     disabled={props.disabled}>
-    <View>
-      <Text style={[styles.text, props.textStyle]}>{props.textButton}</Text>
-    </View>
+    <Text style={[styles.text, props.textStyles]}>{props.textButton}</Text>
   </TouchableOpacity>
 );
 

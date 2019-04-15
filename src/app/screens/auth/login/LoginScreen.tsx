@@ -3,6 +3,7 @@ import strings from '@config/strings';
 import { Button } from '@shared/components/Button';
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Col, Row } from 'react-native-easy-grid';
 
 class LoginScreen extends React.Component<{}> {
   public render() {
