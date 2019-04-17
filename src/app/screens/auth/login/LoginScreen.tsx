@@ -4,14 +4,15 @@ import { Button } from '@shared/components/Button';
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Col, Row } from 'react-native-easy-grid';
+import { Actions } from 'react-native-router-flux'; // New code
 
-class LoginScreen extends React.Component<{}> {
+export class LoginScreen extends React.Component<{}> {
   public render() {
     return (
-      <View style={styles.container}>
+      <Row style={styles.container} size={1}>
         <Text>{strings.WELCOME_TO_LOGIN}</Text>
-        <Button styles={styles.loginBtn} textButton="Login" />
-      </View>
+        <Button btnStyles={styles.loginBtn} textButton="Login" onPress={() => Actions.register()} />
+      </Row>
     );
   }
 }
@@ -20,8 +21,8 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     backgroundColor: colors.DODGER_BLUE,
-    flex: 1,
     justifyContent: 'center',
+    flexDirection: 'column',
   },
   loginBtn: {
     backgroundColor: 'indigo',
@@ -32,5 +33,3 @@ const styles = StyleSheet.create({
     padding: 12,
   },
 });
-
-export default LoginScreen;

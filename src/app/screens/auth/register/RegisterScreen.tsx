@@ -2,6 +2,7 @@ import { Button, Input } from '@shared/components';
 import React, { Component } from 'react';
 import { StyleSheet, Text } from 'react-native';
 import { Col, Row } from 'react-native-easy-grid';
+import { Actions } from 'react-native-router-flux'; // New code
 
 const styles = StyleSheet.create({
   account: {
@@ -16,17 +17,21 @@ const styles = StyleSheet.create({
   },
 });
 
+export interface MyState {
+  email: string;
+  password: string;
+}
+
 const INITIAL_STATE = {
   email: '',
-  pasword: '',
+  password: '',
 };
 
-export class RegisterScreen extends Component {
+export class RegisterScreen extends Component<{}, any> {
   constructor(props: any) {
     super(props);
     this.state = { ...INITIAL_STATE };
   }
-
   public onChange = (event: any) => {
     this.setState({ [event.target.name]: event.target.value });
   };
@@ -34,7 +39,7 @@ export class RegisterScreen extends Component {
   public renderButtons() {
     return (
       <React.Fragment>
-        <Button textButton="GoLogin" onPress={() => console.warn('GoLogin')} />
+        <Button textButton="GoLogin" onPress={() => Actions.login()} />
         <Button textButton="Create" onPress={() => console.warn('Create')} />
       </React.Fragment>
     );
@@ -47,16 +52,16 @@ export class RegisterScreen extends Component {
         <Input
           name="email"
           placeholder="email@gmail.com"
-          onChange={this.onChangeUser}
-          value={this.state.user}
+          onChange={this.onChange}
+          value={this.state.email}
         />
         <Input
+          name="password"
           placeholder="password"
           secureTextEntry={true}
-          onChange={this.onChangePassword}
+          onChange={this.onChange}
           value={this.state.password}
         />
-        <Text>{this.props.auth.errorCreating}</Text>
         {this.renderButtons()}
       </Row>
     );

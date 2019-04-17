@@ -26,6 +26,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     margin: 10,
     width: 300,
+    backgroundColor: '#2ecc71',
+    borderColor: 'white',
   },
   text: {
     color: 'white',

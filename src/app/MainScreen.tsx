@@ -1,13 +1,11 @@
 import * as React from 'react';
 import { StyleSheet, Text } from 'react-native';
 import { Grid, Row } from 'react-native-easy-grid';
-import Router from './Router';
+import { RouterComponent } from './RouterComponent';
 
 export const MainScreen = () => (
   <Grid>
-    <Row style={styles.container}>
-      <Text> Jesus GARNICA OLARRA </Text>
-    </Row>
+    <RouterComponent />
   </Grid>
 );
 
